@@ -1,0 +1,10 @@
+version: '2'
+services:
+
+  frontend:
+    image: smalltom
+    container_name: tomcontainer
+    ports:
+      - "8080:8080"
+    volumes:
+      - "/opt/tomcat/webapps/:/opt/tomcat/webapps/"
